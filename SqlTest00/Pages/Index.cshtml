@@ -9,3 +9,25 @@
     <br>
     <img src="https://lh3.googleusercontent.com/pw/AIL4fc8E0Hoy1Zi2ZcKianP44M-L5F5KRtho80BjYZ7DnAsh8O7BikFeiL2aZgoCLwUiGZdXRPDCE4U3C82AWugJXjv3Y8h3_LtMHTHvHJv0fPHom3MCE5Xp-Li5EAsE7tCbzWML-NvkHMVP0BURfwaD1_uYkQ=w524-h931-s-no?authuser=0" />
 </div>
+<br>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>UID</th>
+            <th>Name</th>
+            <th>Height</th>
+            <th>UpdateDate</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model.Students)
+        {
+        <tr>
+            <td>@student.UID</td>
+            <td>@student.Name</td>
+            <td>@student.Height</td>
+            <td>@student.UpdateDate</td>
+        </tr>
+        }
+    </tbody>
+</table>
